@@ -19,13 +19,55 @@
         <div class="row mt-5">
             <div class="col-md-8 offset-md-2">
                 <div class="card">
+                    <div class="card-header"><h2>Student Details</h2></div>
                     <div class="card-body">
                         <form id="studentForm">
                             <div class="form-group">
-                                <input id="fname" placeholder="First Name" class="form-control">
+                                <input type="text" id="fname" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lname" placeholder="Last Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="contact" placeholder="Contact" class="form-control">
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 my-4">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Sr.No</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentContainer">
+                            <tr>
+                                <td>1</td>
+                                <td>Irshad</td>
+                                <td>Shaikh</td>
+                                <td>irshad@gmail.com</td>
+                                <td>8766737322</td>
+                                <td><i class="fa-solid fa-user-pen fa-2x text-success" role="button"></i></td>
+                                <td><i class="fa-solid fa-trash fa-2x text-danger" role="button"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
